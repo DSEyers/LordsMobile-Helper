@@ -1,0 +1,21 @@
+### GET request with a header
+GET localhost:8181/players/
+Accept: application/json
+
+### GET request with a header for Player 3 (does not exist on at this point in-time)
+GET localhost:8181/players/3
+Accept: application/json
+
+### Send POST request with json body
+POST localhost:8181/players/
+Content-Type: application/json
+{
+  "name": "Hello World"
+}
+
+### Update name for ID 1 to VAMPIRE (was Vqmpire)
+PUT localhost:8181/players/1
+Content-Type: application/json
+{
+"name": "VAMPIRE"
+}
