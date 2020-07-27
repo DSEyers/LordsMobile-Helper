@@ -1,7 +1,7 @@
 package com.dsetech.lordsmobilehelper.controller;
 
-import com.dsetech.lordsmobilehelper.model.Player;
-import com.dsetech.lordsmobilehelper.repo.PlayerRepo;
+import com.dsetech.lordsmobilehelper.persistance.model.Player;
+import com.dsetech.lordsmobilehelper.persistance.repo.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

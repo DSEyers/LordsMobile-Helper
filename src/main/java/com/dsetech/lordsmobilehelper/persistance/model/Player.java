@@ -1,4 +1,4 @@
-package com.dsetech.lordsmobilehelper.model;
+package com.dsetech.lordsmobilehelper.persistance.model;
 
 import lombok.*;
 import lombok.experimental.Accessors;

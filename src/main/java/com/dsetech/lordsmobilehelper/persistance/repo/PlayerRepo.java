@@ -1,6 +1,6 @@
-package com.dsetech.lordsmobilehelper.repo;
+package com.dsetech.lordsmobilehelper.persistance.repo;
 
-import com.dsetech.lordsmobilehelper.model.Player;
+import com.dsetech.lordsmobilehelper.persistance.model.Player;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PlayerRepo extends JpaRepository<Player, Long> {

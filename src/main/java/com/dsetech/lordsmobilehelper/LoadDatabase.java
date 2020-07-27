@@ -1,7 +1,7 @@
 package com.dsetech.lordsmobilehelper;
 
-import com.dsetech.lordsmobilehelper.model.Player;
-import com.dsetech.lordsmobilehelper.repo.PlayerRepo;
+import com.dsetech.lordsmobilehelper.persistance.model.Player;
+import com.dsetech.lordsmobilehelper.persistance.repo.PlayerRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
