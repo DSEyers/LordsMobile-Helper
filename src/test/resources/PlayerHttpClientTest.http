@@ -1,0 +1,33 @@
+### Get list of players
+GET http://localhost:8181/players
+Content-Type: application/json
+
+### Get first player ientified by id 1
+GET http://localhost:8181/players/1
+Content-Type: application/json
+
+### Add new player
+POST http://localhost:8181/players/1
+Content-Type: application/json
+{   "name": "Dancerace" }
+
+### Update player Vqmpire to VAMPIRE
+PUT http://localhost:8181/players/1
+Content-Type: application/json
+{   "name": "VAMPIRE" }
+
+### Get first player ientified by id 1 (name changed)
+GET http://localhost:8181/players/1
+Content-Type: application/json
+
+### Delete first player ientified by id 1 (name Vqmpire/VAMPIRE)
+DELETE http://localhost:8181/players/1
+Content-Type: application/json
+
+### Get first player ientified by id 1 (deleted)
+GET http://localhost:8181/players/1
+Content-Type: application/json
+
+### Get list of players
+GET http://localhost:8181/players
+Content-Type: application/json
