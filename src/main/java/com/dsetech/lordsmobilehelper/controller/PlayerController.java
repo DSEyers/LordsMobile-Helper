@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/players")
 public class PlayerController {
 
     private final PlayerRepo playerRepo;
@@ -19,26 +20,26 @@ public class PlayerController {
 
     // Aggregate root
 
-    @GetMapping("/players")
+    @GetMapping
     List<Player> all() {
         return playerRepo.findAll();
     }
 
-    @PostMapping("/players")
+    @PostMapping
     Player newPlayer(@RequestBody Player newPlayer) {
         return playerRepo.save(newPlayer);
     }
 
     // Single item
 
-    @GetMapping("/players/{id}")
+    @GetMapping("/{id}")
     Player one(@PathVariable Long id) {
 
         return playerRepo.findById(id)
                 .orElseThrow(() -> new PlayerNotFoundException(id));
     }
 
-    @PutMapping("/players/{id}")
+    @PutMapping("/{id}")
     Player replacePlayer(@RequestBody Player newPlayer, @PathVariable Long id) {
 
         return playerRepo.findById(id)
@@ -52,7 +53,7 @@ public class PlayerController {
                 });
     }
 
-    @DeleteMapping("/players/{id}")
+    @DeleteMapping("/{id}")
     void deletePlayer(@PathVariable Long id) {
         playerRepo.deleteById(id);
     }
