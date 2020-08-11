@@ -26,8 +26,4 @@ public class Player {
     private String country;
     private String line_id;
     private LocalDate date_created;
-
-    public void setId(long id) {
-        this.id = id;
-    }
 }
