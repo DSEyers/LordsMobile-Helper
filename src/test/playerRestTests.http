@@ -6,16 +6,18 @@ Accept: application/json
 GET localhost:8181/players/3
 Accept: application/json
 
-### Send POST request with json body
+### Send POST request with json body (note blank line after Content-type is needed for RFC 7230 compliance)
 POST localhost:8181/players/
 Content-Type: application/json
+
 {
-  "name": "Hello World"
+  "name": "Hello World121"
 }
 
-### Update name for ID 1 to VAMPIRE (was Vqmpire)
+### Update name for ID 1 to VAMPIRE (was Vqmpire) (note blank line after Content-type is needed for RFC 7230 compliance)
 PUT localhost:8181/players/1
 Content-Type: application/json
+
 {
-"name": "VAMPIRE"
+  "name": "VAMPIRE"
 }
